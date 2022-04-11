@@ -21,12 +21,9 @@ public class Perceptron {
         double net = 0;
 
         for (int i = 0; i < weights.size(); i++) {
-            net = weights.get(i) * vector.get(i);
+            net += weights.get(i) * vector.get(i);
         }
 
-//        for (int i = 0; i < 5; i++) {
-//            System.out.println("dupa");
-//        }
 
         return net - theta;
     }
